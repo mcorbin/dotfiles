@@ -17,16 +17,15 @@
                  "python2-pip"))
 
 (define lang '("guile@2.2"
-               "guile@2.2:debug"
-               "nss-certs"
-               "icedtea@3.4.0"))
+               "guile@2.2:debug"))
 
 (define shell '("rxvt-unicode"))
 
 (define system '("git"
                  "glibc-locales"
                  "strace"
-                 "nss-certs"))
+                 "nss-certs"
+                 "jq"))
 
 (define wm '("i3-wm"
              "i3status"

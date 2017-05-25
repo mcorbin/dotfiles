@@ -2,12 +2,15 @@
 
 # shell, notes...
 
+# too many issues with icedtea...
+
 apt-get install \
         xserver-xorg \
         xinit \
         nscd \
-        libnss \
-        libnss-dev \
+        libnss3 \
+        libnss3-dev \
+        openjdk-8-jdk \
         maven
 
 # nss.cfg config file if issues with icedtea
