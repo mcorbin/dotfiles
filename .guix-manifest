@@ -10,6 +10,12 @@
 
 (define editor '("emacs"))
 
+(define python '("python@3.5.3"
+                 "python@2.7.13"
+                 "python-virtualenv"
+                 "python2-virtualenv"
+                 "python2-pip"))
+
 (define lang '("guile@2.2"
                "guile@2.2:debug"
                "icedtea@3.4.0"))
@@ -24,10 +30,12 @@
              "i3status"
              "dmenu"))
 
+
 (packages->manifest
  (map (compose list specification->package+output)
       (append font
               editor
+              python
               lang
               shell
               system
