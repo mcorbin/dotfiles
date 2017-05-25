@@ -20,10 +20,15 @@
                  "strace"
                  "nss-certs"))
 
+(define wm '("i3-wm"
+             "i3status"
+             "dmenu"))
+
 (packages->manifest
  (map (compose list specification->package+output)
       (append font
               editor
               lang
               shell
-              system)))
+              system
+              wm)))
