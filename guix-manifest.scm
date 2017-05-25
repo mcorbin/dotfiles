@@ -23,7 +23,8 @@
 
 (define shell '("rxvt-unicode"))
 
-(define system '("glibc-locales"
+(define system '("git"
+                 "glibc-locales"
                  "strace"
                  "nss-certs"))
 
@@ -33,7 +34,8 @@
 
 (define media '("pavucontrol"
                 "transmission"
-                "vlc"))
+                "vlc"
+                "gimp"))
 
 (packages->manifest
  (map (compose list specification->package+output)
