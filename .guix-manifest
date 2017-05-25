@@ -30,6 +30,9 @@
              "i3status"
              "dmenu"))
 
+(define media '("pavucontrol"
+                "transmission"
+                "vlc"))
 
 (packages->manifest
  (map (compose list specification->package+output)
@@ -39,4 +42,5 @@
               lang
               shell
               system
-              wm)))
+              wm
+              media)))
