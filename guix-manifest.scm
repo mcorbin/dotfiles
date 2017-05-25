@@ -18,6 +18,7 @@
 
 (define lang '("guile@2.2"
                "guile@2.2:debug"
+               "nss-certs"
                "icedtea@3.4.0"))
 
 (define shell '("rxvt-unicode"))
