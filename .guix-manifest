@@ -1,19 +1,29 @@
 ; -*- mode: scheme; -*-
 
+(define font '("font-adobe-source-han-sans"
+               "gs-fonts"
+               "fontconfig"
+               "font-inconsolata"
+               "font-dejavu"
+               "font-gnu-freefont-ttf"
+               "font-fira-mono"))
+
+(define editor '("emacs"))
+
+(define lang '("guile@2.2"
+               "guile@2.2:debug"
+               "icedtea@3.4.0"))
+
+(define shell '("rxvt-unicode"))
+
+(define system '("glibc-locales"
+                 "strace"
+                 "nss-certs"))
+
 (packages->manifest
  (map (compose list specification->package+output)
-      '("rxvt-unicode"
-        "emacs"
-        "glibc-locales"
-        "font-adobe-source-han-sans"
-        "gs-fonts"
-        "fontconfig"
-        "font-inconsolata"
-        "font-dejavu"
-        "font-gnu-freefont-ttf"
-        "font-fira-mono"
-        "nss-certs"
-        "guile@2.2"
-        "guile@2.2:debug"
-        "strace"
-        "icedtea@3.4.0")))
+      (append font
+              editor
+              lang
+              shell
+              system)))
