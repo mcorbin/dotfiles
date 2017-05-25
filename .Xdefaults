@@ -1,0 +1,27 @@
+! do not scroll with output
+URxvt*scrollTtyOutput: false
+
+! scroll in relation to buffer (with mouse scroll or Shift+Page Up)
+URxvt*scrollWithBuffer: true
+
+! scroll back to the bottom on keypress
+URxvt*scrollTtyKeypress: true
+
+URxvt.secondaryScreen: 1
+URxvt.secondaryScroll: 0
+
+URxvt.font: xft:Monospace-14
+
+urxvt*foreground: #DDDDDD
+urxvt*background: #161a1f
+URxvt*cursorColor: #EEDC82
+URxvt*scrollColor: #053D00
+URxvt.letterSpace: -1
+URxvt.lineSpace: 1
+
+URxvt*color1:  #F40000
+URxvt*color2:  #4E9A06
+URxvt*color4:  #3465A4
+URxvt*color9:  #EF2929
+URxvt*color10: #8AE234
+URxvt*color12: #729FCF
