@@ -11,6 +11,7 @@ apt-get install \
         libnss3 \
         libnss3-dev \
         openjdk-8-jdk \
+        dnsutils \
         maven
 
 # nss.cfg config file if issues with icedtea

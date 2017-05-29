@@ -33,6 +33,7 @@
 
 (define media '("pavucontrol"
                 "transmission"
+                "libreoffice"
                 "vlc"
                 "gimp"))
 
