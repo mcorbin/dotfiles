@@ -114,6 +114,11 @@ fi
 
 GUIX_PROFILE=$HOME/.guix-profile
 source $GUIX_PROFILE/etc/profile
+
 export PATH="/home/mathieu/.guix-profile/bin${PATH:+:}$PATH"
+export PATH=$PATH:/usr/local/go/bin
+
 export LOCPATH=$HOME/.guix-profile/lib/locale
 export GUIX_LOCPATH=$HOME/.guix-profile/lib/locale
+
+export GOPATH=~/prog/go
