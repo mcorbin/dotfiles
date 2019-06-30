@@ -112,8 +112,10 @@ if ! shopt -oq posix; then
   fi
 fi
 
+export GO111MODULE=on
 export PATH=$PATH:/usr/local/go/bin
 export PATH=$PATH:/home/mathieu/prog/go/bin
 export PATH=$PATH:/home/mathieu/.cargo/bin
+export PERL_BADLANG=0
 
 export GOPATH=~/prog/go
